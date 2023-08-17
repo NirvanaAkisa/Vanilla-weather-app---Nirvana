@@ -16,7 +16,8 @@
 </head>
 <body>
     <div class="container">
-    <div class="weather-app">
+    <div class="weather-app-wrapper">
+      <div class="weather-app">
      <h1>
       Cape Town
      </h1>
@@ -30,10 +31,16 @@
      </ul>
 <div class="row">
   <div class="col-6">
-  <img src="" alt="clear" />
-  12°C | °F
+    <div class = "d-flex weather-temperature">
+  <img src="https://ssl.gstatic.com/onebox/weather/64/sunny.png" alt="clear" id="icon" />
+  <div class="float-left">
+    <strong> 12</strong>
+    <span class="units">
+      °C | °F 
+       </span>
 </div>
-
+</div>
+</div>
 <div class="col-6">
   <ul>
     <li>
@@ -48,11 +55,14 @@
   </ul>
 </div>
 </div>
+</div>
+</div>
+<div>
 <small>
   <a href="https://github.com/wecodeschool/vanilla-weather-app" target="_blank">Open-source code</a>
   by Keitumetse Nirvana Sekoala
 </small>
-  </div>
+</div>
   <script src/app.js></script>
 </body>
 </html>
